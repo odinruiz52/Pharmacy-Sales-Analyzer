@@ -29,6 +29,9 @@ Pharmacy-Sales-Analyzer/
 
 ## Power BI Visuals
 
+![Dashboard Screenshot](powerbi/pharmacy_dashboard.png)
+
+
 - **Top 10 Drugs by Total Cost**  
 - **Total Drug Spending by Region**
 
