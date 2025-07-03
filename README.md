@@ -1,11 +1,11 @@
-# 💊 Pharmacy Sales Analyzer
+# Pharmacy Sales Analyzer
 
 **Objective:**  
 Analyze U.S. Medicare Part D pharmacy sales using Power BI to uncover key insights about drug spending.
 
 ---
 
-## 📊 Project Overview
+## Project Overview
 
 This project uses 2023 Medicare Part D drug spending data to answer:
 
@@ -14,7 +14,7 @@ This project uses 2023 Medicare Part D drug spending data to answer:
 
 ---
 
-## 📁 Folder Structure
+## Folder Structure
 
 Pharmacy-Sales-Analyzer/
 ├── data/
@@ -27,7 +27,7 @@ Pharmacy-Sales-Analyzer/
 
 ---
 
-## 📈 Power BI Visuals
+## Power BI Visuals
 
 - **Top 10 Drugs by Total Cost**  
 - **Total Drug Spending by Region**
@@ -36,13 +36,13 @@ Each visual uses clean design, formatted axes, professional labels, and color-co
 
 ---
 
-## 📦 Data Source
+## Data Source
 
 - [Medicare Part D - Prescribers by Geography and Drug (2023)](https://data.cms.gov/provider-summary-by-type-of-service/medicare-part-d-prescribers/medicare-part-d-prescribers-by-geography-and-drug)
 
 ---
 
-## 🔧 Tools Used
+## Tools Used
 
 - **Power BI Desktop**
 - **Visual Studio Code**
@@ -50,6 +50,6 @@ Each visual uses clean design, formatted axes, professional labels, and color-co
 
 ---
 
-## 📜 License
+## License
 
 This project is licensed under the MIT License.
