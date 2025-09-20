@@ -1,58 +1,48 @@
 # Pharmacy Sales Analyzer
 
-**Objective:**  
-Analyze U.S. Medicare Part D pharmacy sales using Power BI to uncover key insights about drug spending.
+## Executive Summary / Key Findings
+- **TODO:** Total Medicare Part D spending (2023): $[fill amount]
+- **TODO:** Top drug by total cost: [drug name] at $[amount]
+- **TODO:** Top 3 states by spending: [state1], [state2], [state3]
+- **TODO:** Average cost per claim: $[amount]
+- **TODO:** Total beneficiaries served: [number] people
 
----
+## See the Dashboard
+- **TODO:** Interactive Power BI report: [add publish-to-web link]
+- **TODO:** Executive summary PDF: `docs/Executive_Summary.pdf` (export from Power BI)
+- Dashboard screenshot: `powerbi/pharmacy_dashboard.png`
 
-## Project Overview
+## What's Inside
+- `data/medicare_part_d_sales_2023.csv` — CMS Medicare Part D prescriber data (115,936 rows)
+- `powerbi/pharmacy_sales_analyzer.pbix` — Power BI Desktop file with data model and visuals
 
-This project uses 2023 Medicare Part D drug spending data to answer:
+## How to View / Reproduce
+1. **Power BI Desktop:** Open `powerbi/pharmacy_sales_analyzer.pbix`
+2. Go to **Transform Data** to review cleaning steps
+3. **Refresh** data to confirm calculations
+4. **Optional:** Use `notebooks/01_baseline_analysis.ipynb` for Python validation (if created)
 
-- What are the **top-selling drugs** by total cost?
-- Which **regions/states** spend the most on prescriptions?
+## Metrics Used
+See detailed definitions and DAX formulas in [`powerbi/POWERBI_MEASURES.md`](powerbi/POWERBI_MEASURES.md)
 
----
+Key metrics:
+- Total Spending, Total Claims, Beneficiaries
+- Cost per Claim, Cost per Beneficiary
+- Top N rankings by geography and drug type
 
-## Folder Structure
+## Data Dictionary & Cleaning
+- **Column definitions:** [`DATA_DICTIONARY.md`](DATA_DICTIONARY.md)
+- **Cleaning policy:** [`CLEANING.md`](CLEANING.md)
+- **QA checks:** Row count validation, null handling for suppressed values
 
-Pharmacy-Sales-Analyzer/
-├── data/
-│ └── medicare_part_d_sales_2023.csv
-├── powerbi/
-│ └── pharmacy_sales_analyzer.pbix
-├── README.md
-├── LICENSE
+## Limitations & Next Steps
+**Limitations:**
+- Medicare Part D only (excludes other insurance types)
+- 2023 snapshot (no trend analysis)
+- Suppressed values (`*`, `#`) treated as missing
+- Not adjusted for inflation or population
 
-
----
-
-## Power BI Visuals
-
-![Dashboard Screenshot](powerbi/pharmacy_dashboard.png)
-
-
-- **Top 10 Drugs by Total Cost**  
-- **Total Drug Spending by Region**
-
-Each visual uses clean design, formatted axes, professional labels, and color-coded categories.
-
----
-
-## Data Source
-
-- [Medicare Part D - Prescribers by Geography and Drug (2023)](https://data.cms.gov/provider-summary-by-type-of-service/medicare-part-d-prescribers/medicare-part-d-prescribers-by-geography-and-drug)
-
----
-
-## Tools Used
-
-- **Power BI Desktop**
-- **Visual Studio Code**
-- **Git & GitHub**
-
----
-
-## License
-
-This project is licensed under the MIT License.
+**Next Steps:**
+- Add multi-year trend analysis
+- Include per-capita normalization by state population
+- **TODO:** Publish interactive dashboard for stakeholder access
