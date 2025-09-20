@@ -3,9 +3,15 @@
 ## Executive Summary / Key Findings
 - **TODO:** Total Medicare Part D spending (2023): $[fill amount]
 - **TODO:** Top drug by total cost: [drug name] at $[amount]
-- **TODO:** Top 3 states by spending: [state1], [state2], [state3]
+- **TODO:** Top 3 states by total spending: [state1], [state2], [state3]
 - **TODO:** Average cost per claim: $[amount]
-- **TODO:** Total beneficiaries served: [number] people
+- **TODO:** Total beneficiaries served: [number]
+
+## Decisions This Enables
+- Identify which high-spend drugs to prioritize for formulary review
+- Spot states with unusually high per-beneficiary costs for targeted education or policy efforts
+- Compare brand vs. generic spending patterns to highlight potential savings
+- Use geographic insights to support budget planning and healthcare strategy
 
 ## See the Dashboard
 - **TODO:** Interactive Power BI report: [add publish-to-web link]
