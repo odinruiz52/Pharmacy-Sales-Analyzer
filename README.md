@@ -1,11 +1,25 @@
 # Pharmacy Sales Analyzer
 
-## Executive Summary / Key Findings
-- Total Medicare Part D spending (2023): $551.11 BN
-- Top drug by total cost: Eliquis ($37BN)
-- Top 3 states by total spending: California ($27 BN), New York ($22 BN), and Florida ($20 BN)
-- Average cost per claim: $170.42
-- Average cost per beneficiary: $566.98
+## 📊 Executive Summary / Key Findings
+
+### 💰 Market Overview
+| Metric | 2023 Value |
+|--------|------------|
+| **Total Medicare Part D Spending** | **$551.11 Billion** |
+| **Average Cost per Claim** | $170.42 |
+| **Average Cost per Beneficiary** | $566.98 |
+
+### 💊 Top Performance
+| Category | Leader | Value |
+|----------|--------|-------|
+| **Highest Cost Drug** | Eliquis | $37.0 Billion |
+
+### 🗺️ Geographic Distribution
+| Rank | State | Total Spending |
+|------|-------|---------------|
+| 1 | California | $27.0 Billion |
+| 2 | New York | $22.0 Billion |
+| 3 | Florida | $20.0 Billion |
 
 ## See the Dashboard
 
