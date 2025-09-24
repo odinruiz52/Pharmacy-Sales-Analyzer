@@ -23,6 +23,12 @@
 
 ## The Charts
 
+### 📄 Full Dashboard Export (PDF)
+**[View Complete Dashboard - pharmacy_sales_analyzer_visuals.pdf](powerbi/pharmacy_sales_analyzer_visuals.pdf)**
+*Two-page comprehensive dashboard export showing all key metrics and visualizations.*
+
+---
+
 ### Top 10 Drugs by Medicare Spending (2023)
 ![Top 10 Drugs by Total Cost](powerbi/top10_drugs.png)<br>
 *Top 10 Medicare Part D drugs ranked by total spending (2023).*
