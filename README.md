@@ -16,18 +16,19 @@ Medicare spending varies greatly by state. This map and chart help identify whic
 ![Spending Map](powerbi/map_state_spend.png)
 *Total Medicare Part D drug spending by state (2023).*
 
+## See the Dashboard
+
+- 📄 [Executive Summary (PDF)](powerbi/pharmacy_sales_analyzer_visuals.pdf) — full two-page dashboard export
+- 🖼️ [Top 10 Drugs (PNG)](powerbi/top10_drugs.png)
+- 🖼️ [Top 10 States (PNG)](powerbi/top10_states.png)
+- 🖼️ [Spending by State Map (PNG)](powerbi/map_state_spend.png)
+- 🖼️ [Cost per Beneficiary by State (PNG)](powerbi/top_beneficiary_cost.png)
+
 ## Decisions This Enables
 - Target education/outreach for the highest-cost drugs.
 - Allocate resources to states with disproportionate spending.
 - Evaluate brand vs generic substitution opportunities.
 - Flag unusually high-cost patterns for fraud or outlier review.
-
-## See the Dashboard
-- Full interactive Power BI file: `powerbi/pharmacy_sales_analyzer.pbix`
-- One-page PDF summary: [Executive Summary PDF](docs/Executive_Summary.pdf)
-- Dashboard screenshot:
-![Full Dashboard](powerbi/pharmacy_dashboard.png)
-*Complete two-page Power BI dashboard (2023 Medicare Part D).*
 
 ## What's Inside
 - `data/medicare_part_d_sales_2023.csv` — CMS Medicare Part D prescriber data (115,936 rows)
