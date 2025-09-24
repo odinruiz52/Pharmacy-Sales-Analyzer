@@ -34,6 +34,7 @@
 ## What's Inside
 - `data/medicare_part_d_sales_2023.csv` — CMS Medicare Part D prescriber data (115,936 rows)
 - `powerbi/pharmacy_sales_analyzer.pbix` — Power BI Desktop file with data model and visuals
+- `powerbi/pharmacy_sales_analyzer_visuals.pdf` — Two-page PDF export of the dashboard
 
 ## How to View / Reproduce
 1. **Power BI Desktop:** Open `powerbi/pharmacy_sales_analyzer.pbix`
