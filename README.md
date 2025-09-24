@@ -21,7 +21,7 @@
 | 2 | New York | $22.0 Billion |
 | 3 | Florida | $20.0 Billion |
 
-## See the Dashboard
+## The Charts
 
 ### Top 10 Drugs by Medicare Spending (2023)
 ![Top 10 Drugs by Total Cost](powerbi/top10_drugs.png)<br>
