@@ -10,21 +10,19 @@
 ## See the Dashboard
 
 ### Top 10 Drugs by Medicare Spending (2023)
-![Top 10 Drugs by Total Cost](powerbi/top10_drugs.png)
+![Top 10 Drugs by Total Cost](powerbi/top10_drugs.png)<br>
 *Top 10 Medicare Part D drugs ranked by total spending (2023).*
 
 ### Top 10 States by Medicare Drug Spending (2023)
-![Top 10 States by Medicare Drug Spending](powerbi/top10_states.png)
+![Top 10 States by Medicare Drug Spending](powerbi/top10_states.png)<br>
 *Top 10 states ranked by total Medicare Part D drug spending (2023).*
 
 ### Medicare Drug Spending by State Map (2023)
-<img src="powerbi/map_state_spend.png?v=2" alt="Medicare Drug Spending by State Map" width="600">
-
+<img src="powerbi/map_state_spend.png?v=2" alt="Medicare Drug Spending by State Map" width="600"><br>
 *Updated geographic distribution of Medicare Part D drug spending across the United States (2023).*
 
 ### Cost per Beneficiary by State (2023)
-<img src="powerbi/top_beneficiary_cost.png" alt="Cost per Beneficiary by State" width="600">
-
+<img src="powerbi/top_beneficiary_cost.png" alt="Cost per Beneficiary by State" width="600"><br>
 *Average drug costs per Medicare beneficiary by state, highlighting regional cost variations (2023).*
 
 ## Decisions This Enables
