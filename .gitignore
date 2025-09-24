@@ -11,8 +11,6 @@
 *.swp
 *.swo
 
-# Clae settings
-.ce/
 
 # Power BI temporary files
 *.pbit.tmp
