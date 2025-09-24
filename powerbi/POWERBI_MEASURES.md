@@ -1,54 +1,92 @@
 # Power BI Measures & Visual Logic
 
-## Core Measures (DAX Formulas)
+This project uses the CMS Medicare Part D 2023 dataset loaded as **'medicare_part_d_sales_2023 (2)'**.
 
-### Primary Metrics
-```dax
-Total Spending = SUM(TableName[Tot_Drug_Cst])
-```
-Total cost across all drugs in the current filter context.
+## Core Measures (DAX)
 
+### Primary Totals
 ```dax
-Total Claims = SUM(TableName[Tot_Clms])
+Total Spending =
+SUM('medicare_part_d_sales_2023 (2)'[Tot_Drug_Cst])
 ```
-Total number of prescriptions filled.
 
 ```dax
-Beneficiaries = SUM(TableName[Tot_Benes])
+Total Claims =
+SUM('medicare_part_d_sales_2023 (2)'[Tot_Clms])
 ```
-Total unique patients served.
-
-### Calculated Ratios
-```dax
-Cost per Claim = DIVIDE([Total Spending], [Total Claims])
-```
-Average cost per prescription filled.
 
 ```dax
-Cost per Beneficiary = DIVIDE([Total Spending], [Beneficiaries])
+Beneficiaries =
+SUM('medicare_part_d_sales_2023 (2)'[Tot_Benes])
 ```
-Average spending per patient.
+
+### Normalized Metrics
+```dax
+Cost per Claim =
+DIVIDE([Total Spending], [Total Claims], BLANK())
+```
+
+```dax
+Cost per Beneficiary =
+DIVIDE([Total Spending], [Beneficiaries], BLANK())
+```
+
+### Context / Share
+```dax
+% of Total Spending =
+VAR AllScopeTotal =
+    CALCULATE([Total Spending], ALL('medicare_part_d_sales_2023 (2)'))
+RETURN DIVIDE([Total Spending], AllScopeTotal, BLANK())
+```
+
+**Tip:** Use `% of Total Spending` in tooltips or on bar labels to show contribution.
 
 ## Visual Logic & Interactions
 
-### Top N Drugs Chart
-- **Ranking:** Order drugs by `[Total Spending]` descending
-- **Display:** Top 10 drugs with cost labels
-- **Slicers:** Allow filtering by:
-  - Geographic level (National, State, County)
-  - Brand vs Generic (using Brand_Name vs Gnrc_Name)
-  - Therapeutic class (Opioid, Antibiotic, Antipsychotic flags)
+### Executive Summary (Page 1)
 
-### Geographic Analysis
-- **Map Visual:** State-level spending using `Prscrbr_Geo_Desc` where `Prscrbr_Geo_Lvl = "State"`
-- **Bar Chart:** Top states by total spending
-- **Drill-down:** Enable drilling from state to county level (if county data present)
+**Cards:** Total Spending, Total Claims, Cost per Claim, Cost per Beneficiary
 
-### Therapeutic Class Breakdown
-- **Clustered Bar:** Compare spending across drug classifications
-- **Filters:** Separate analysis for Opioid vs Non-Opioid, Antibiotic usage patterns
+**Top 10 Drugs (bar):**
+- **Axis:** Brnd_Name
+- **Value:** Total Spending
+- **Filter:** Top N = 10 by [Total Spending]
+- **Sort:** Descending by [Total Spending]
+- **Optional:** add `% of Total Spending` as a data label or tooltip
 
-## **TODO:** Additional Measures to Build
-- Spending growth (if multi-year data added)
-- Market share percentages by drug/manufacturer
-- Geographic spending per capita (requires population data join)
+**Top 10 States (bar):**
+- **Axis:** Prscrbr_Geo_Desc (State)
+- **Value:** Total Spending
+- **Filter:** Top N = 10 by [Total Spending]
+- **Slicer:** Prscrbr_Geo_Desc (State dropdown)
+
+### Geographic Spending (Page 2)
+
+**Filled Map:**
+- **Location:** Prscrbr_Geo_Desc (State)
+- **Value:** Total Spending
+
+**Bar – Cost per Beneficiary by State:**
+- **Axis:** Prscrbr_Geo_Desc
+- **Value:** Cost per Beneficiary
+- **Sort:** Descending by Cost per Beneficiary
+
+## Formatting Guidelines
+
+**In the model, set formats:**
+- **Total Spending:** Currency, display units Auto (or Billions)
+- **Total Claims/Beneficiaries:** Whole number (display units Millions if large)
+- **Per-metrics:** Currency, 2 decimals
+
+## Column Reference
+Confirmed columns from 'medicare_part_d_sales_2023 (2)':
+- `Tot_Drug_Cst` — Total drug cost in USD
+- `Tot_Clms` — Total claims count
+- `Tot_Benes` — Total beneficiaries served
+- `Brnd_Name` — Brand drug name
+- `Gnrc_Name` — Generic drug name
+- `Prscrbr_Geo_Desc` — Geographic description (state name)
+- `Prscrbr_Geo_Lvl` — Geographic level (National, State, etc.)
+- `Opioid_Drug_Flag` — Opioid classification flag (Y/N)
+- `Antbtc_Drug_Flag` — Antibiotic classification flag (Y/N)
+- `Antpsyct_Drug_Flag` — Antipsychotic classification flag (Y/N)
