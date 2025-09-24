@@ -9,17 +9,19 @@
 | **Average Cost per Claim** | $170.42 |
 | **Average Cost per Beneficiary** | $566.98 |
 
+**Data source:** [CMS Medicare Part D — Prescribers by Geography and Drug (2023)](https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Part-D-Prescriber)
+
 ### 💊 Top Performance
 | Category | Leader | Value |
 |----------|--------|-------|
-| **Highest Cost Drug** | Eliquis | $37.0 Billion |
+| **Highest Cost Drug** | Eliquis | $37B |
 
 ### 🗺️ Geographic Distribution
 | Rank | State | Total Spending |
 |------|-------|---------------|
-| 1 | California | $27.0 Billion |
-| 2 | New York | $22.0 Billion |
-| 3 | Florida | $20.0 Billion |
+| 1 | California | $27B |
+| 2 | New York | $22B |
+| 3 | Florida | $20B |
 
 ## The Charts
 
@@ -29,21 +31,21 @@
 
 ---
 
-### Top 10 Drugs by Medicare Spending (2023)
-![Top 10 Drugs by Total Cost](powerbi/top10_drugs.png)<br>
-*Top 10 Medicare Part D drugs ranked by total spending (2023).*
+### Top 10 Medicare Drugs by Total Spending (2023)
+![Top 10 Medicare Drugs by Total Spending](powerbi/top10_drugs.png)<br>
+*Top 10 Medicare Drugs by Total Spending (2023).*
 
 ### Top 10 States by Medicare Drug Spending (2023)
 ![Top 10 States by Medicare Drug Spending](powerbi/top10_states.png)<br>
-*Top 10 states ranked by total Medicare Part D drug spending (2023).*
+*Top 10 States by Medicare Drug Spending (2023).*
 
-### Medicare Drug Spending by State Map (2023)
-<img src="powerbi/map_state_spend.png?v=2" alt="Medicare Drug Spending by State Map" width="600"><br>
-*Updated geographic distribution of Medicare Part D drug spending across the United States (2023).*
+### Medicare Drug Spending by State (2023)
+<img src="powerbi/map_state_spend.png?v=2" alt="Medicare Drug Spending by State" width="600"><br>
+*Medicare Drug Spending by State (2023).*
 
 ### Cost per Beneficiary by State (2023)
 <img src="powerbi/top_beneficiary_cost.png" alt="Cost per Beneficiary by State" width="600"><br>
-*Average drug costs per Medicare beneficiary by state, highlighting regional cost variations (2023).*
+*Cost per Beneficiary by State (2023).*
 
 ## Decisions This Enables
 - Target education/outreach for the highest-cost drugs.
@@ -60,7 +62,7 @@
 1. **Power BI Desktop:** Open `powerbi/pharmacy_sales_analyzer.pbix`
 2. Go to **Transform Data** to review cleaning steps
 3. **Refresh** data to confirm calculations
-4. **Optional:** Use `notebooks/01_baseline_analysis.ipynb` for Python validation (if created)
+4. **Explore:** Review DAX measures and data model relationships
 
 ## Metrics Used
 See detailed definitions and DAX formulas in [`powerbi/POWERBI_MEASURES.md`](powerbi/POWERBI_MEASURES.md)
@@ -81,3 +83,9 @@ Key metrics:
 - Suppressed values (`*`, `#`) treated as missing.
 - Not adjusted for inflation or population.
 - Next Steps: Add multi-year data, normalize by state population, publish live dashboard.
+
+---
+
+## 📧 Contact
+**Victor Ruiz** | Data Analyst
+📧 odinruiz52@yahoo.com | 💼 [LinkedIn](https://linkedin.com/in/victor-ruiz-analyst)

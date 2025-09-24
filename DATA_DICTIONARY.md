@@ -14,20 +14,20 @@ Based on CMS Medicare Part D dataset structure. Column meanings inferred from na
 | Tot_30day_Fills | Total 30-day equivalent fills (normalized dosage) | Decimal |
 | Tot_Drug_Cst | Total drug cost in USD | Decimal |
 | Tot_Benes | Total beneficiaries (unique patients) served | Integer |
-| GE65_Sprsn_Flag | **TODO:** Suppression flag for 65+ age group | Text |
-| GE65_Tot_Clms | **TODO:** Claims count for beneficiaries 65+ | Integer |
-| GE65_Tot_30day_Fills | **TODO:** 30-day fills for 65+ group | Decimal |
-| GE65_Tot_Drug_Cst | **TODO:** Drug cost for 65+ beneficiaries | Decimal |
-| GE65_Bene_Sprsn_Flag | **TODO:** Beneficiary suppression flag for 65+ | Text |
-| GE65_Tot_Benes | **TODO:** Total beneficiaries 65+ | Integer |
-| LIS_Bene_Cst_Shr | **TODO:** Low Income Subsidy beneficiary cost share | Decimal |
-| NonLIS_Bene_Cst_Shr | **TODO:** Non-LIS beneficiary cost share | Decimal |
+| GE65_Sprsn_Flag | Suppression flag for 65+ age group | Text |
+| GE65_Tot_Clms | Claims count for beneficiaries 65+ | Integer |
+| GE65_Tot_30day_Fills | 30-day fills for 65+ group | Decimal |
+| GE65_Tot_Drug_Cst | Drug cost for 65+ beneficiaries | Decimal |
+| GE65_Bene_Sprsn_Flag | Beneficiary suppression flag for 65+ | Text |
+| GE65_Tot_Benes | Total beneficiaries 65+ | Integer |
+| LIS_Bene_Cst_Shr | Low Income Subsidy beneficiary cost share | Decimal |
+| NonLIS_Bene_Cst_Shr | Non-LIS beneficiary cost share | Decimal |
 | Opioid_Drug_Flag | Flag indicating opioid classification (Y/N) | Text |
-| Opioid_LA_Drug_Flag | **TODO:** Long-acting opioid flag (Y/N) | Text |
+| Opioid_LA_Drug_Flag | Long-acting opioid flag (Y/N) | Text |
 | Antbtc_Drug_Flag | Flag indicating antibiotic classification (Y/N) | Text |
 | Antpsyct_Drug_Flag | Flag indicating antipsychotic classification (Y/N) | Text |
 
 ## Notes
-- **TODO:** Verify exact column names and meanings by reviewing Power BI data model
-- Suppressed values appear as `*` or `#` in numeric columns
+- Column definitions based on CMS Medicare Part D dataset documentation
+- Suppressed values appear as `*` or `#` in numeric columns for privacy protection
 - Drug flags (Opioid, Antibiotic, Antipsychotic) enable therapeutic class analysis

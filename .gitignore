@@ -1,0 +1,31 @@
+# Temporary files
+*.tmp
+~$*
+.DS_Store
+*.log
+*.cache
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Claude Code settings
+.claude/
+
+# Power BI temporary files
+*.pbit.tmp
+~$*.pbix
+
+# OS generated files
+Thumbs.db
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# Backup files
+*.bak
+*.backup

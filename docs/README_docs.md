@@ -1,13 +1,19 @@
-# Docs Outputs & Export Plan
+# Project Documentation
 
-Planned exports (place files here after exporting from Power BI):
+This folder contains project documentation and reference materials.
 
-- `docs/Executive_Summary.pdf` — single-page executive summary (cards + top 10 chart)
-- `docs/top10_drugs.png` — bar chart of top 10 drugs by total spending
-- `docs/map_state_spend.png` — map of total spending by state
+## Current Export Structure
+
+All Power BI exports are located in the `/powerbi` folder:
+
+- `powerbi/pharmacy_sales_analyzer_visuals.pdf` — Complete 2-page dashboard export
+- `powerbi/top10_drugs.png` — Top 10 Medicare drugs by total spending
+- `powerbi/top10_states.png` — Top 10 states by Medicare drug spending
+- `powerbi/map_state_spend.png` — Geographic spending distribution map
+- `powerbi/top_beneficiary_cost.png` — Cost per beneficiary by state
 
 ## Export Instructions
 
-Export from Power BI → File → Export → PDF/PNG
-
-Save files under `docs/` folder.
+1. **Power BI Desktop:** File → Export → PDF/PNG
+2. **Save location:** `/powerbi` folder
+3. **Naming convention:** Use descriptive names matching chart titles
