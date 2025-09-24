@@ -7,22 +7,23 @@
 - Average cost per claim: $[Fill from dashboard]
 - Total beneficiaries served: [Fill from dashboard]
 
+## See the Dashboard
+
+### Top 10 Drugs by Medicare Spending (2023)
 ![Top 10 Drugs by Total Cost](powerbi/top10_drugs.png)
 *Top 10 Medicare Part D drugs ranked by total spending (2023).*
 
-## Geographic Spending
-Medicare spending varies greatly by state. This map and chart help identify which regions face the highest drug costs.
+### Top 10 States by Medicare Drug Spending (2023)
+![Top 10 States by Medicare Drug Spending](powerbi/top10_states.png)
+*Top 10 states ranked by total Medicare Part D drug spending (2023).*
 
-![Spending Map](powerbi/map_state_spend.png)
-*Total Medicare Part D drug spending by state (2023).*
+### Medicare Drug Spending by State Map (2023)
+![Medicare Drug Spending by State Map](powerbi/map_state_spend.png)
+*Geographic distribution of Medicare Part D drug spending across the United States (2023).*
 
-## See the Dashboard
-
-- 📄 [Executive Summary (PDF)](powerbi/pharmacy_sales_analyzer_visuals.pdf) — full two-page dashboard export
-- 🖼️ [Top 10 Drugs (PNG)](powerbi/top10_drugs.png)
-- 🖼️ [Top 10 States (PNG)](powerbi/top10_states.png)
-- 🖼️ [Spending by State Map (PNG)](powerbi/map_state_spend.png)
-- 🖼️ [Cost per Beneficiary by State (PNG)](powerbi/top_beneficiary_cost.png)
+### Cost per Beneficiary by State (2023)
+![Cost per Beneficiary by State](powerbi/top_beneficiary_cost.png)
+*Average drug costs per Medicare beneficiary by state, highlighting regional cost variations (2023).*
 
 ## Decisions This Enables
 - Target education/outreach for the highest-cost drugs.
