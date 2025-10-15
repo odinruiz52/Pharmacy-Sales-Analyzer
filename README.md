@@ -1,8 +1,8 @@
 # Pharmacy Sales Analyzer
 
-## 📊 Executive Summary / Key Findings
+## Executive Summary / Key Findings
 
-### 💰 Market Overview
+### Market Overview
 | Metric | 2023 Value |
 |--------|------------|
 | **Total Medicare Part D Spending** | **$551.11 Billion** |
@@ -11,7 +11,7 @@
 
 **Data source:** [CMS Medicare Part D — Prescribers by Geography and Drug (2023)](https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Part-D-Prescriber)
 
-### 💊 Top Performance
+### Top Performance
 | Category | Leader | Value |
 |----------|--------|-------|
 | **Highest Cost Drug** | Eliquis | $37B |
