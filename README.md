@@ -16,7 +16,7 @@
 |----------|--------|-------|
 | **Highest Cost Drug** | Eliquis | $37B |
 
-### 🗺️ Geographic Distribution
+### Geographic Distribution
 | Rank | State | Total Spending |
 |------|-------|---------------|
 | 1 | California | $27B |
@@ -25,7 +25,7 @@
 
 ## The Charts
 
-### 📄 Full Dashboard Export (PDF)
+### Full Dashboard Export (PDF)
 **[View Complete Dashboard - pharmacy_sales_analyzer_visuals.pdf](powerbi/pharmacy_sales_analyzer_visuals.pdf)**
 *Two-page comprehensive dashboard export showing all key metrics and visualizations.*
 
@@ -86,6 +86,6 @@ Key metrics:
 
 ---
 
-## 📧 Contact
+## Contact
 **Victor Ruiz** | Data Analyst
-📧 odinruiz52@yahoo.com | 💼 [LinkedIn](https://linkedin.com/in/victor-ruiz-analyst)
+odinruiz52@yahoo.com | [LinkedIn](https://linkedin.com/in/victor-ruiz-analyst)
